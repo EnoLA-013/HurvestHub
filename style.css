@@ -448,11 +448,11 @@ section {
 .categories .box_container {
   border: 0px solid;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
-  gap: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(26rem, 1fr));
+  gap: 1.2rem;
 }
 
-.categories .box_container .box_1 {
+.categories .box_container .box {
   padding: 3rem 2rem;
   background: #fff;
   border-radius: 0.5rem;
@@ -462,22 +462,22 @@ section {
   text-align: center;
 }
 
-.categories .box_container .box_1:hover {
+.categories .box_container .box:hover {
   box-shadow: 1px 1px 10px 4px var(--green);
 }
 
-.categories .box_container .box_1 img {
+.categories .box_container .box img {
   margin: 1rem 0;
   height: 16rem;
 }
 
-.categories .box_container .box_1 h3 {
+.categories .box_container .box h3 {
   font-size: 2rem;
   color: var(--black);
   line-height: 1.8;
 }
 
-.categories .box_container .box_1 p {
+.categories .box_container .box p {
   font-size: 1.6rem;
   color: var(--light-color);
   line-height: 1.8;
@@ -722,6 +722,10 @@ section {
   }
   .heading {
     font-size: 2.5rem;
+  }
+  .categories .box_container {
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    gap: 1.5rem;
   }
   .footer {
     text-align: center;
