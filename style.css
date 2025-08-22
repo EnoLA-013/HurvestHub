@@ -15,7 +15,7 @@
   --black: #130f40;
   --light-color: #666;
   --box-shadow: 0.5rem 1.5rem solid rgba(0, 0, 0.1);
-  --border: 2rem solid rgba(0, 0, 0.1);
+  --border: 0.2rem solid rgba(0, 0, 0.1);
   --outline: 0.1rem solid rgb(216, 212, 212);
 }
 
@@ -488,59 +488,118 @@ section {
 
 /* review styling start */
 
-.review .review_slider
-{
+.review .review_slider {
   border: 0px solid;
   padding: 1rem;
 }
 
-.review .review_slider .box
-{
+.review .review_slider .box {
   border: 0px solid;
   background: #fff;
-  border-radius: .5rem;
+  border-radius: 0.5rem;
   text-align: center;
   padding: 3rem 2rem;
   outline-offset: -1rem;
   outline: var(--outline);
   box-shadow: var(--box-shadow);
-  transition: .2s linear;
+  transition: 0.2s linear;
 }
 
-.review .review_slider .box:hover
-{
+.review .review_slider .box:hover {
   box-shadow: 1px 1px 10px 4px var(--green);
 }
 
-.review .review_slider .box img 
-{
+.review .review_slider .box img {
   height: 10rem;
   width: 10rem;
   border-radius: 50%;
 }
 
-.review .review_slider .box p
-{
+.review .review_slider .box p {
   padding: 1rem 0;
   line-height: 1.8;
   color: var(--light-color);
   font-size: 1.5rem;
 }
 
-.review .review_slider .box h3
-{
-  padding-bottom: .5rem;
+.review .review_slider .box h3 {
+  padding-bottom: 0.5rem;
   color: var(--black);
   font-size: 2.2rem;
 }
 
-.review .review_slider .box .stars i
-{
+.review .review_slider .box .stars i {
   color: orange;
   font-size: 1.7rem;
 }
 
 /* review styling end */
+
+/* blogs styling start */
+
+.blogs .box_container {
+  border: 0px solid;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(26rem, 1fr));
+  gap: 1.5rem;
+}
+
+.blogs .box_container .box {
+  overflow: hidden;
+  border-radius: 0.5rem;
+  box-shadow: var(--box-shadow);
+  background: #fff;
+}
+
+.blogs .box_container .box img {
+  height: 25rem;
+  width: 100%;
+  object-fit: cover;
+}
+
+.blogs .box_container .box .content {
+  padding: 2rem;
+}
+
+.blogs .box_container .box .content .icons 
+{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom: 1.5rem;
+  margin-bottom: 1rem;
+  border-bottom: var(--border);
+}
+
+.blogs .box_container .box .content .icons a {
+  color: var(--light-color);
+  font-size: 1.5rem;
+}
+
+.blogs .box_container .box .content .icons a:hover {
+  color: var(--black);
+}
+
+.blogs .box_container .box .content .icons a i {
+  color: green;
+  padding-right: 0.5rem;
+}
+
+.blogs .box_container .box .content h3 {
+  line-height: 1.8;
+  color: var(--black);
+  font-size: 2.2rem;
+  padding: 0.5rem 0;
+}
+
+.blogs .box_container .box .content p {
+  line-height: 1.8;
+  color: var(--light-color);
+  font-size: 1.2rem;
+  padding: 0.5rem;
+}
+
+/* blogs styling end */
 
 /***** media queries ****/
 
